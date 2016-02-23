@@ -1,0 +1,110 @@
+.section-heading {
+    height: 50px;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 50px;
+        height: 50px;
+        background: center center no-repeat;
+    }
+
+    &_orange {
+        background-color: #f57d2f;
+    }
+
+    &_purple {
+        background-color: #4d156c;
+    }
+
+    &_gold {
+        background-color: #a99a25;
+    }
+
+    &_navy {
+        background-color: #0c2454;
+    }
+
+    &_blue {
+        background-color: #2096d6;
+    }
+
+    &_flights {
+        &:before {
+            background-image: url(../img/flights-icon.png);
+        }
+    }
+
+    &_hotel {
+        &:before {
+            background-image: url(../img/hotel-icon.png);
+        }
+    }
+
+    &_globe {
+        &:before {
+            background-image: url(../img/globe-icon.png);
+        }
+    }
+
+    &_insurance {
+        &:before {
+            background-image: url(../img/insurance-icon.png);
+        }
+    }
+
+    &_arrow-blue {
+        position: relative;
+
+        &:after {
+            top: 100%;
+            left: 10px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-width: 10px 10px 0 10px;
+            border-top-color: #2096d6;
+        }
+    }
+
+    &_small {
+        height: 40px;
+
+        &:before {
+            width: 40px;
+            height: 40px;
+        }
+
+        .section-heading__h4 {
+            margin-left: 40px;
+            line-height: 40px;
+        }
+    }
+
+    .section-heading__h4 {
+        margin-left: 50px;
+    }
+
+    .section-heading__time {
+        color: #fff;
+        font-size: 13px;
+        font-family: sans-serif;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 10px;
+        vertical-align: middle;
+        line-height: 40px;
+
+        &:before {
+            display: block;
+            content: '';
+        }
+    }
+}

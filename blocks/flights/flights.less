@@ -1,0 +1,54 @@
+.flights {
+    padding: 0 10px;
+
+    &__extras-list {
+        margin: 18px 0 13px;
+    }
+
+    &__extra-item {
+        height: 40px;
+        margin-bottom: 11px;
+        padding: 0 10px;
+        display: flex;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            width: 54px;
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        &_grey {
+            background-color: #f0f0f0;
+            color: #434343;
+
+            &:before {
+                background: url(../img/info.png) no-repeat left center;
+            }
+        }
+
+        &_blue {
+            background-color: #f4f9ff;
+            color: #0165bb;
+
+            &:before {
+                background: url(../img/blue-ticket.png) no-repeat left center;
+            }
+        }
+    }
+
+    &__change-flight {
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+            color: #f00;
+            text-decoration: none;
+        }
+    }
+}
