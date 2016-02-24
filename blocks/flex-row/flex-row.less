@@ -1,0 +1,38 @@
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px; //tmp
+    align-items: stretch;
+
+    &__flex-col {
+        flex-grow: 1;
+        border-right: 1px solid #d9d9d9;
+
+
+        &:last-child {
+            border: none;
+        }
+
+        @media all and (max-width: 640px) {
+            min-width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid #d9d9d9;
+        }
+
+        &_20 {
+            flex-basis: 20%;
+        }
+
+        &_30 {
+            flex-basis: 30%;
+        }
+
+        &_40 {
+            flex-basis: 40%;
+        }
+
+        &_60 {
+            flex-basis: 60%;
+        }
+    }
+}

@@ -1,113 +1,180 @@
 <!doctype html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Your Cart</title>
-        <link rel="stylesheet" href="index.css"/>
-    </head>
-    <body>
-        <header class="header">
-            <button class="header__btn header__btn_menu"></button>
-            <a class="header__logo" href="#"><img src="../img/logo_small.png"></a>
-            <button class="header__btn header__btn_find header__btn_right"></button>
-            <button class="header__btn header__btn_ask header__btn_right"></button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+<header class="header">
+    <button class="header__btn header__btn_menu"></button>
+    <a class="header__logo" href="#"><img src="../img/logo_small.png"></a>
+    <button class="header__btn header__btn_find header__btn_right"></button>
+    <button class="header__btn header__btn_ask header__btn_right"></button>
+</header>
+<section class="cart">
+    <header class="cart-heading ">
+        <div class="cart-title cart-title_border-bottom heading">
+            <h1 class="page__heading page__heading_h1">Your cart</h1>
+            <span class="cart-title__items-count">3 items</span>
+            <data class="page__price span span_align-right" value="1000.00">$1000</data>
+        </div>
+        <div class="cart-title cart-title_vertical-padding">
+            <button class="page__continue-button">Continue to checkout</button>
+        </div>
+    </header>
+    <section class="flights-wrapper">
+        <header class="heading">
+            <h2 class="page__heading page__heading_h2">Your flights</h2>
+            <a href="#" class="flights-wrapper__change-flight span span_align-right">Change flights</a>
         </header>
-        <section class="cart">
-            <header class="cart-heading ">
-                <div class="cart-title cart-title_border-bottom heading">
-                    <h1 class="page__heading page__heading_h1">Your cart</h1>
-                    <span class="cart-title__items-count">3 items</span>
-                    <data class="page__price span span_align-right" value="1000.00">$1000</data>
-                </div>
-                <div class="cart-title cart-title_vertical-padding">
-                    <button class="page__continue-button">Continue to checkout</button>
-                </div>
+        <ul class="flights-wrapper__ads">
+            <li class="flights-wrapper__ad-item flights-wrapper__ad-item_blue heading">
+                <h6 class="page__heading page__heading_h6">Blue ticket exclusive!</h6>
+            </li>
+            <li class="flights-wrapper__ad-item flights-wrapper__ad-item_grey heading">
+                <h6 class="page__heading page__heading_h6">Student/Travel fare</h6>
+            </li>
+        </ul>
+        <section class="section">
+            <header class="section-heading section-heading_orange section-heading_icon section-heading_icon_flights section-heading_small heading heading_white">
+                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Outbound</h4>
+                <time class="section-heading__time">21h 57m</time>
             </header>
-            <section class="flights">
-                <header class="heading">
-                    <h2 class="page__heading page__heading_h2">Your flights</h2>
-                    <a href="#" class="flights__change-flight span span_align-right">Change flights</a>
-                </header>
-                <ul class="flights__extras-list">
-                    <li class="flights__extra-item flights__extra-item_blue heading">
-                        <h6 class="page__heading page__heading_h6">Student/Travel fare</h6>
-                    </li>
-                    <li class="flights__extra-item flights__extra-item_grey heading">
-                        <h6 class="page__heading page__heading_h6">Blue ticket exclusive!</h6>
-                    </li>
-                </ul>
-                <section class="section">
-                    <header class="section-heading section-heading_orange section-heading_icon section-heading_icon_flights section-heading_small heading heading_white">
-                        <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Outbound</h4>
-                        <time class="section-heading__time">21h 57m</time>
-                    </header>
-                    <div class="section-content"></div>
-                    <header class="section-heading section-heading_orange section-heading_icon section-heading_icon_flights section-heading_small heading heading_white">
-                        <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Inbound</h4>
-                        <time class="section-heading__time">22h 14m</time>
-                    </header>
-                    <div class="section-content"></div>
+            <div class="section-content">
+                <section class="flight">
+                    <h6 class="section-content__header page__heading page__heading_h6">Thu, 12 March 2015</h6>
+                    <div class="flex-row">
+                        <div class="flight__airlines-logo flex-row__flex-col flex-row__flex-col_20">
+                        </div>
+                        <div class="flex-row__flex-col flex-row__flex-col_40">
+                            <span class="section-content__span">Depart:</span>
+                            <p class="section-content__p">
+                                London, United Kingdom (LGW)
+                            </p>
+                            <time>10:00</time>
+                        </div>
+                        <div class="flex-row__flex-col flex-row__flex-col_40">
+                            <span class="section-content__span">Arrive:</span>
+                            <p class="section-content__p">
+                                Brunei Bander Seri Begawan, Brunei International Airport (BWN)
+                            </p>
+                            <time>15:00</time>
+                        </div>
+                    </div>
+                    <div class="flight__details flex-row">
+                        <div class="flex-row__flex-col flex-row__flex-col_30">Lorem</div>
+                        <div class="flex-row__flex-col flex-row__flex-col_30">Lorem</div>
+                        <div class="flex-row__flex-col flex-row__flex-col_30">Lorem</div>
+                    </div>
                 </section>
-                <section class="section">
-                    <header class="section-heading section-heading_purple section-heading_icon section-heading_icon_hotel heading heading_white">
-                        <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Hotel De Las Letras</h4>
-                    </header>
-                    <div class="section-content"></div>
-                </section>
-                <section class="section">
-                    <header class="section-heading section-heading_gold section-heading_icon section-heading_icon_globe heading heading_white">
-                        <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Gift Vouchers</h4>
-                    </header>
-                    <div class="section-content"></div>
-                </section>
-                <section class="section">
-                    <header class="section-heading section-heading_navy section-heading_icon section-heading_icon_insurance heading heading_white">
-                        <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Insurance</h4>
-                    </header>
-                    <div class="section-content"></div>
-                </section>
-                <section class="section">
-                    <header class="section-heading section-heading_gold section-heading_icon section-heading_icon_globe heading heading_white">
-                        <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Discount Cards</h4>
-                    </header>
-                    <div class="section-content"></div>
-                </section>
-                <section class="section">
-                    <header class="section-heading section-heading_blue section-heading_arrow-blue heading heading_white">
-                        <h4 class="page__heading page__heading_h3 page__heading_white">Get Your Travel Extras</h4>
-                    </header>
-                </section>
-            </section>
+            </div>
+            <header class="section-heading section-heading_orange section-heading_icon section-heading_icon_flights section-heading_small heading heading_white">
+                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Inbound</h4>
+                <time class="section-heading__time">22h 14m</time>
+            </header>
+            <div class="section-content">
+                <h6 class="section-content__header page__heading page__heading_h6">Thu, 12 March 2015</h6>
+                <div class="flight flex-row">
+                    <div class="flight__airlines-logo flex-row__flex-col flex-row__flex-col_20">
+                    </div>
+                    <div class="flex-row__flex-col flex-row__flex-col_40">
+                        <span class="section-content__span">Depart:</span>
+                        <p class="section-content__p">
+                            London, United Kingdom (LGW)
+                        </p>
+                        <time>10:00</time>
+                    </div>
+                    <div class="flex-row__flex-col flex-row__flex-col_40">
+                        <span class="section-content__span">Arrive:</span>
+                        <p class="section-content__p">
+                            Brunei Bander Seri Begawan, Brunei International Airport (BWN)
+                        </p>
+                        <time>15:00</time>
+                    </div>
+                </div>
+            </div>
         </section>
-        <aside class="sidebar"></aside>
-        <footer class="footer">
-            <section class="pay">
-                <h6 class="pay__h6">Pay securely with:</h6>
-                <ul class="pay__cards-list">
-                    <li><img src="../img/visa-icon.png"></li>
-                    <li><img src="../img/visa-e-icon.png"></li>
-                    <li><img src="../img/maestro-icon.png"></li>
-                    <li><img src="../img/master-card-icon.png"></li>
-                    <li><img src="../img/american-e-icon.png"></li>
-                    <li><img src="../img/delta-icon.png"></li>
-                </ul>
-            </section>
-            <section class="promo-code">
-                <h6 class="promo-code__h6">Apply Promo Code</h6>
-            </section>
-            <section class="section section_margin-top section_background section_footer">
-                <p>
-                    Price includes Taxes. Credit Cards subject to 2% fee, no fees on Debit Cards. Shipping charges may apply.
-                </p>
-                <header class="heading">
-                    <h3 class="page__heading page__heading_h3">Final total</h3>
-                    <data class="page__price span span_align-right" value="1000.00">$1000</data>
-                </header>
-            </section>
-            <section>
-                <button class="page__continue-button page__continue-button_arrow">Continue</button>
-            </section>
-        </footer>
-    </body>
+    </section>
+    <section class="travel-extras">
+        <section class="section">
+            <header class="section-heading section-heading_purple section-heading_icon section-heading_icon_hotel heading heading_white">
+                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Hotel De Las Letras</h4>
+            </header>
+            <div class="section-content flex-row">
+                <div class="flex-row__flex-col flex-row__flex-col_60"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section-heading section-heading_gold section-heading_icon section-heading_icon_globe heading heading_white">
+                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Gift Vouchers</h4>
+            </header>
+            <div class="section-content flex-row">
+                <div class="flex-row__flex-col flex-row__flex-col_40"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section-heading section-heading_navy section-heading_icon section-heading_icon_insurance heading heading_white">
+                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Insurance</h4>
+            </header>
+            <div class="section-content flex-row">
+                <div class="flex-row__flex-col flex-row__flex-col_40"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section-heading section-heading_gold section-heading_icon section-heading_icon_globe heading heading_white">
+                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Discount Cards</h4>
+            </header>
+            <div class="section-content flex-row">
+                <div class="flex-row__flex-col flex-row__flex-col_60"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+                <div class="flex-row__flex-col flex-row__flex-col_20"></div>
+            </div>
+        </section>
+        <section class="section">
+            <header class="section-heading section-heading_blue section-heading_arrow-blue heading heading_white">
+                <h4 class="page__heading page__heading_h3 page__heading_white">Get Your Travel Extras</h4>
+            </header>
+        </section>
+    </section>
+</section>
+<aside class="sidebar"></aside>
+<footer class="footer">
+    <section class="pay">
+        <h6 class="pay__h6">Pay securely with:</h6>
+        <ul class="pay__cards-list">
+            <li><img src="../img/visa-icon.png"></li>
+            <li><img src="../img/visa-e-icon.png"></li>
+            <li><img src="../img/maestro-icon.png"></li>
+            <li><img src="../img/master-card-icon.png"></li>
+            <li><img src="../img/american-e-icon.png"></li>
+            <li><img src="../img/delta-icon.png"></li>
+        </ul>
+    </section>
+    <section class="promo-code">
+        <h6 class="promo-code__h6">Apply Promo Code</h6>
+    </section>
+    <section class="section section_margin-top section_background section_footer">
+        <p>
+            Price includes Taxes. Credit Cards subject to 2% fee, no fees on Debit Cards. Shipping charges may apply.
+        </p>
+        <header class="heading">
+            <h3 class="page__heading page__heading_h3">Final total</h3>
+            <data class="page__price span span_align-right" value="1000.00">$1000</data>
+        </header>
+    </section>
+    <section>
+        <button class="page__continue-button page__continue-button_arrow">Continue</button>
+    </section>
+</footer>
+</body>
 </html>

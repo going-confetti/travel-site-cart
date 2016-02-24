@@ -12,5 +12,8 @@ exports.mustDeps = [
     {block: 'section'},
     {block: 'section-heading'},
     {block: 'section-content'},
-    {block: 'flights'}
+    {block: 'flex-row'},
+    {block: 'flights-wrapper'},
+    {block: 'flight'},
+    {block: 'travel-extras'}
 ];
