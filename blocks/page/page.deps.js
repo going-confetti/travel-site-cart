@@ -15,5 +15,6 @@ exports.mustDeps = [
     {block: 'flex-row'},
     {block: 'flights-wrapper'},
     {block: 'flight'},
+    {block: 'flight-notifications'},
     {block: 'travel-extras'}
 ];

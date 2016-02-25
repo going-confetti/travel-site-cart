@@ -1,0 +1,35 @@
+.flight-notifications {
+    background-color: #fff2ea;
+    margin: 10px;
+
+    &__notification {
+        color: #424242;
+        position: relative;
+
+        &_time {
+            padding-left: 40px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 10px;
+                height: 17px;
+                width: 18px;
+                background-image: url(../img/clock-icon-dark.png);
+            }
+        }
+
+        &_warning {
+            padding-left: 40px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 10px;
+                height: 17px;
+                width: 18px;
+                background-image: url(../img/warning-icon.png);
+            }
+        }
+    }
+}
