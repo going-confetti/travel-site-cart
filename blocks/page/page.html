@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cart</title>
     <link rel="stylesheet" href="index.css"/>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/app.js"></script>
 </head>
 <body>
 <header class="header">
@@ -14,7 +16,7 @@
     <button class="header__btn header__btn_ask header__btn_right"></button>
 </header>
 <section class="cart">
-    <header class="cart-heading ">
+    <header class="cart-heading">
         <div class="cart-title cart-title_border-bottom heading">
             <h1 class="page__heading page__heading_h1">Your cart</h1>
             <span class="cart-title__items-count">3 items</span>
@@ -63,36 +65,39 @@
                             <time>15:00</time>
                         </div>
                     </div>
-                    <div class="flight__details flex-row">
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Passengers</strong>
-                                <span>1 Adult, 2 Students</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Class</strong>
-                                <span>Business Class</span>
-                            </p>
-                        </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Airplane 132</strong>
-                                <span>Airbus</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Operated By</strong>
-                                <span>American Airlines</span>
-                            </p>
-                        </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Flight</strong>
-                                <span>Emirates EX123</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Flight duration</strong>
-                                <span>11:15</span>
-                            </p>
+                    <div class="expandable expandable_section">
+                        <a href="#" class="expandable__expander">Full Details</a>
+                        <div class="flight__details flex-row expandable__content expandable__content_flex">
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Passengers</strong>
+                                    <span>1 Adult, 2 Students</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Class</strong>
+                                    <span>Business Class</span>
+                                </p>
+                            </div>
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Airplane 132</strong>
+                                    <span>Airbus</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Operated By</strong>
+                                    <span>American Airlines</span>
+                                </p>
+                            </div>
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Flight</strong>
+                                    <span>Emirates EX123</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Flight duration</strong>
+                                    <span>11:15</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="flight-notifications flex-row flex-row_center">
@@ -126,36 +131,39 @@
                             <time>15:00</time>
                         </div>
                     </div>
-                    <div class="flight__details flex-row">
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Passengers</strong>
-                                <span>1 Adult, 2 Students</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Class</strong>
-                                <span>Business Class</span>
-                            </p>
-                        </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Airplane 132</strong>
-                                <span>Airbus</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Operated By</strong>
-                                <span>American Airlines</span>
-                            </p>
-                        </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Flight</strong>
-                                <span>Emirates EX123</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Flight duration</strong>
-                                <span>11:15</span>
-                            </p>
+                    <div class="expandable expandable_section">
+                        <a href="#" class="expandable__expander">Full Details</a>
+                        <div class="flight__details flex-row expandable__content expandable__content_flex">
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Passengers</strong>
+                                    <span>1 Adult, 2 Students</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Class</strong>
+                                    <span>Business Class</span>
+                                </p>
+                            </div>
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Airplane 132</strong>
+                                    <span>Airbus</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Operated By</strong>
+                                    <span>American Airlines</span>
+                                </p>
+                            </div>
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Flight</strong>
+                                    <span>Emirates EX123</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Flight duration</strong>
+                                    <span>11:15</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -185,36 +193,39 @@
                             <time>15:00</time>
                         </div>
                     </div>
-                    <div class="flight__details flex-row">
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Passengers</strong>
-                                <span>1 Adult, 2 Students</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Class</strong>
-                                <span>Business Class</span>
-                            </p>
-                        </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Airplane 132</strong>
-                                <span>Airbus</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Operated By</strong>
-                                <span>American Airlines</span>
-                            </p>
-                        </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Flight</strong>
-                                <span>Emirates EX123</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Flight duration</strong>
-                                <span>11:15</span>
-                            </p>
+                    <div class="expandable expandable_section">
+                        <a href="#" class="expandable__expander">Full Details</a>
+                        <div class="flight__details flex-row expandable__content expandable__content_flex">
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Passengers</strong>
+                                    <span>1 Adult, 2 Students</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Class</strong>
+                                    <span>Business Class</span>
+                                </p>
+                            </div>
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Airplane 132</strong>
+                                    <span>Airbus</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Operated By</strong>
+                                    <span>American Airlines</span>
+                                </p>
+                            </div>
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Flight</strong>
+                                    <span>Emirates EX123</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Flight duration</strong>
+                                    <span>11:15</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="flight-notifications flex-row flex-row_center">
@@ -244,36 +255,39 @@
                             <time>15:00</time>
                         </div>
                     </div>
-                    <div class="flight__details flex-row">
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Passengers</strong>
-                                <span>1 Adult, 2 Students</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Class</strong>
-                                <span>Business Class</span>
-                            </p>
-                        </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Airplane 132</strong>
-                                <span>Airbus</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Operated By</strong>
-                                <span>American Airlines</span>
-                            </p>
-                        </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_30">
-                            <p class="section-content__grey">
-                                <strong>Flight</strong>
-                                <span>Emirates EX123</span>
-                            </p>
-                            <p class="section-content__grey">
-                                <strong>Flight duration</strong>
-                                <span>11:15</span>
-                            </p>
+                    <div class="expandable expandable_section">
+                        <a href="#" class="expandable__expander">Full Details</a>
+                        <div class="flight__details flex-row expandable__content expandable__content_flex">
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Passengers</strong>
+                                    <span>1 Adult, 2 Students</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Class</strong>
+                                    <span>Business Class</span>
+                                </p>
+                            </div>
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Airplane 132</strong>
+                                    <span>Airbus</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Operated By</strong>
+                                    <span>American Airlines</span>
+                                </p>
+                            </div>
+                            <div class="flex-row__flex-col flex-row__flex-col_30">
+                                <p class="section-content__grey">
+                                    <strong>Flight</strong>
+                                    <span>Emirates EX123</span>
+                                </p>
+                                <p class="section-content__grey">
+                                    <strong>Flight duration</strong>
+                                    <span>11:15</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>

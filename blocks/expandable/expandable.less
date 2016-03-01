@@ -1,0 +1,42 @@
+.expandable {
+    &__expander {
+        cursor: pointer;
+        text-decoration: none;
+        color: #434343;
+
+        &:before {
+            content: '+';
+            margin-right: 5px;
+        }
+
+        @media all and (min-width: 641px) {
+            display: none;
+        }
+    }
+
+    &__content {
+        @media all and (max-width: 640px) {
+            display: none;
+        }
+    }
+
+    &_expanded {
+        .expandable__expander {
+            &:before {
+                content: '-';
+            }
+        }
+
+        .expandable__content {
+            display: block;
+        }
+
+        .expandable__content_flex {
+            display: flex;
+        }
+    }
+
+    &_section {
+        padding: 10px 15px;
+    }
+}
