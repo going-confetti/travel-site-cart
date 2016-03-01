@@ -1,7 +1,6 @@
 .section-content {
     border: 1px solid #d9d9d9;
     border-top: none;
-    min-height: 300px;
     font-size: 13px;
     -webkit-box-shadow: 0 0 4px 1px rgba(214,214,214,1);
     -moz-box-shadow: 0 0 4px 1px rgba(214,214,214,1);
@@ -22,5 +21,11 @@
 
     &__grey {
         color: #8b8b8b;
+    }
+
+    &__details {
+        @media all and (max-width: 640px) {
+            //display: none;
+        }
     }
 }

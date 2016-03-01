@@ -11,29 +11,56 @@
     &__flex-col {
         padding: 10px;
 
-
         &:last-child {
             border: none;
         }
 
-        @media all and (max-width: 640px) {
-            min-width: 100%;
-        }
-
         &_20 {
-            flex-basis: 20%;
+            @media all and (min-width: 641px) {
+                flex-basis: 20%;
+            }
         }
 
         &_30 {
-            flex-basis: 100%/3;
+            @media all and (min-width: 641px) {
+                flex-basis: 100%/3;
+            }
         }
 
         &_40 {
-            flex-basis: 40%;
+            @media all and (min-width: 641px) {
+                flex-basis: 40%;
+            }
         }
 
         &_60 {
-            flex-basis: 60%;
+            @media all and (min-width: 641px) {
+                flex-basis: 60%;
+            }
+        }
+
+        &_sm-50 {
+            @media all and (max-width: 640px) {
+                flex-basis: 50%;
+            }
+        }
+
+        &_sm-100 {
+            @media all and (max-width: 640px) {
+                flex-basis: 100%;
+            }
+        }
+
+        &_sm-border-right {
+            @media all and (max-width: 640px) {
+                border-right: 1px solid #d9d9d9;
+            }
+        }
+
+        &_sm-border-bottom {
+            @media all and (max-width: 640px) {
+                border-bottom: 1px solid #d9d9d9;
+            }
         }
     }
 }
