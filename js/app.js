@@ -5,4 +5,10 @@ $(document).ready(function() {
             $(this).parent().toggleClass('expandable_expanded');
         }
     });
+
+    $('.header').on('click', '.header__btn_menu', function() {
+        if ($(window).width() < 640) {
+            $('.nav').toggleClass('nav_opened');
+        }
+    })
 });
