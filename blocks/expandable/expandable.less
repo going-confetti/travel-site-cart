@@ -1,8 +1,13 @@
 .expandable {
     &__expander {
+        display: inline-block;
         cursor: pointer;
         text-decoration: none;
         color: #434343;
+
+        &_large {
+            margin: 19px 10px;
+        }
 
         &:before {
             content: '+';
@@ -22,6 +27,10 @@
 
     &_expanded {
         .expandable__expander {
+            &_large {
+                margin: 19px 10px 14px;
+            }
+
             &:before {
                 content: '-';
             }
@@ -34,9 +43,5 @@
         .expandable__content_flex {
             display: flex;
         }
-    }
-
-    &_section {
-        padding: 10px 15px;
     }
 }

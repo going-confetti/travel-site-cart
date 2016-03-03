@@ -1,16 +1,33 @@
 .promo-code {
     margin-top: 25px;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 14px 0;
 
-    .promo-code__h6 {
-        font-size: 14px;
-        font-weight: 700;
-        border-top: 1px solid #d3d3d3;
-        border-bottom: 1px solid #d3d3d3;
-        padding: 14px 0;
+    &__input-wrapper {
+        display: flex;
+        align-items: stretch;
+        height: 40px;
+        margin-top: 14px;
+    }
 
-        &:before {
-            content: '+';
-            margin-right: 5px;
-        }
+    &__input {
+        flex-grow: 1;
+        border: 1px solid #dfe3e6;
+        padding-left: 17px;
+
+    }
+
+    &__btn {
+        margin-left: 12px;
+        background: #eeeff1;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        -webkit-box-shadow: 0px 1px 3px 0px #a8a8a8;
+        box-shadow: 0px 1px 3px 0px #a8a8a8;
     }
 }

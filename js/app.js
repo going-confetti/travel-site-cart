@@ -1,8 +1,16 @@
 $(document).ready(function() {
     $('.expandable').on('click', '.expandable__expander', function(event) {
         event.preventDefault();
+
         if ($(window).width() < 640) {
-            $(this).parent().toggleClass('expandable_expanded');
+            $(this).closest('.expandable').toggleClass('expandable_expanded');
+
+            if ($(this).hasClass('expandable__expander_toggle-text')) {
+                var currentText = $(this).text();
+                $(this).text(function() {
+                    return currentText === 'Full Details' ? 'Less Details' : 'Full Details';
+                });
+            }
         }
     });
 
