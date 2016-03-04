@@ -1,0 +1,67 @@
+.get-extra {
+    margin-top: 10px;
+    background: #f6f7f9;
+    display: flex;
+    padding: 10px;
+
+    &__thumbnail {
+        display: none;
+    }
+
+    &__checklist {
+        margin-bottom: 25px;
+    }
+
+    &__checklist-item {
+        margin-top: 20px;
+        padding-left: 30px;
+        font-size: 13.5px;
+        position: relative;
+
+        &:before {
+            content: '✓';
+            font-weight: bold;
+            color: #c3d833;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -9px;
+            font-size: 18px;
+        }
+    }
+
+    // @todo: define a common btn element of the page block and and modifiers for different types of buttons
+    &__add-to-cart-btn {
+        border: none;
+        outline: none;
+        color: #fff;
+        background-color: #0065bd;
+        height: 44px;
+        -webkit-box-shadow: 0 2px 2px 0 #3e5c76;
+        box-shadow: 0 2px 2px 0 #3e5c76;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: sans-serif;
+        width: 100%;
+        margin-top: 18px;
+    }
+
+    &__add-to-cart {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__label {
+        display: block;
+        color: #434343;
+        font-size: 12px;
+    }
+
+    &__number-of-travellers {
+        height: 31px;
+        width: 73px;
+        padding-left: 20px;
+        margin-left: auto;
+    }
+}

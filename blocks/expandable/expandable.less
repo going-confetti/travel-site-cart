@@ -32,7 +32,7 @@
             }
 
             &:before {
-                content: '-';
+                content: '–';
             }
         }
 
@@ -42,6 +42,39 @@
 
         .expandable__content_flex {
             display: flex;
+        }
+    }
+
+    &_extra-item {
+        .expandable__expander {
+            &:before {
+                background-color: #f9f9fb;
+                color: #007bc8;
+                display: inline-block;
+                border-radius: 23px;
+                width: 23px;
+                height: 23px;
+                line-height: 23px;
+                font-weight: bold;
+                text-align: center;
+                border: 1px solid #e4e4e4;
+                margin-right: 14px;
+            }
+
+            @media all and (min-width: 641px) {
+                display: block;
+                pointer-events: none;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        .expandable__content {
+            @media all and (min-width: 641px) {
+                display: block;
+            }
         }
     }
 }
