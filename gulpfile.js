@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var bem = require('gulp-bem');
 var concat = require('gulp-concat');
 var less = require('gulp-less');
+var autoprefixer = require('gulp-autoprefixer');
+var csscomb = require('gulp-csscomb');
 
 var depsResolve = require('deps-resolver');
 var walker = require('bem-walk');
@@ -25,6 +27,11 @@ gulp.task('css', function () {
        .pipe(bem.src('{block}.less'))
        .pipe(less())
        .pipe(concat('index.css'))
+       .pipe(autoprefixer({
+           browsers: ['last 2 versions'],
+           cascade: false
+       }))
+       .pipe(csscomb())
        .pipe(gulp.dest('dist'));
 });
 
