@@ -3,6 +3,24 @@
     position: relative;
     padding: 0 10px;
 
+    &__time {
+        color: #fff;
+        font-size: 13px;
+        font-family: sans-serif;
+        display: block;
+        margin-left: auto;
+
+        &:before {
+            display: inline-block;
+            content: '';
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            vertical-align: bottom;
+            background: url(../img/clock-icon-orange.png) no-repeat center center;
+        }
+    }
+
     &_icon {
         &:before {
             display: block;
@@ -80,19 +98,6 @@
         &:before {
             width: 30px;
             height: 40px;
-        }
-    }
-
-    .section-heading__time {
-        color: #fff;
-        font-size: 13px;
-        font-family: sans-serif;
-        display: block;
-        margin-left: auto;
-
-        &:before {
-            display: block;
-            content: '';
         }
     }
 }

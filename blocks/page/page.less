@@ -61,18 +61,39 @@
     }
 }
 
-.page__continue-button {
+.page__btn {
     cursor: pointer;
     border: none;
     outline: none;
-    background: #c9da00;
-    width: 100%;
-    height: 42px;
-    color: #093164;
     text-transform: uppercase;
-    font-size: 18px;
     font-weight: bold;
     font-family: sans-serif;
+
+    &_continue {
+        background: #c9da00;
+        width: 100%;
+        height: 42px;
+        color: #093164;
+        font-size: 18px;
+    }
+
+    &_promo {
+        margin-left: 12px;
+        background: #eeeff1;
+        -webkit-box-shadow: 0 1px 3px 0 #a8a8a8;
+        box-shadow: 0 1px 3px 0 #a8a8a8;
+    }
+
+    &_add-to-cart {
+        color: #fff;
+        background-color: #0065bd;
+        height: 44px;
+        -webkit-box-shadow: 0 2px 2px 0 #3e5c76;
+        box-shadow: 0 2px 2px 0 #3e5c76;
+        font-size: 15px;
+        width: 100%;
+        margin-top: 18px;
+    }
 
     &_arrow {
         &:after {

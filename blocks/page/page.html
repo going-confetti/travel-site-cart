@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Cart</title>
     <link rel="stylesheet" href="index.css"/>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/jquery-2.2.1.min.js"></script>
     <script src="../js/app.js"></script>
 </head>
 <body class="page">
 <header class="header">
     <button class="header__btn header__btn_menu"></button>
-    <a class="header__logo" href="#"><img src="../img/logo_small.png" alt="STA Travel"></a>
+    <a class="header__logo" href="#"><img src="../img/logo_small.png" alt="STA Travel" height="36" width="53"></a>
     <button class="header__btn header__btn_find"></button>
     <button class="header__btn header__btn_ask"></button>
 </header>
@@ -48,13 +48,13 @@
             <data class="page__price span span_align-right" value="1000.00">$1000</data>
         </div>
         <div class="cart-title cart-title_vertical-padding">
-            <button class="page__continue-button">Continue to checkout</button>
+            <button class="page__btn page__btn_continue">Continue to checkout</button>
         </div>
     </header>
     <section class="flights-wrapper">
         <header class="heading">
             <h2 class="page__heading page__heading_h2">Your flights</h2>
-            <a href="#" class="flights-wrapper__change-flight span span_align-right">Change flights</a>
+            <a href="#" class="flights-wrapper__change-flight">Change Flights</a>
         </header>
         <ul class="flights-wrapper__ads">
             <li class="flights-wrapper__ad-item flights-wrapper__ad-item_blue heading">
@@ -257,7 +257,7 @@
                         </div>
                     </div>
                     <div class="flight-notifications flex-row flex-row_center">
-                        <div class="flight-notifications__notification flight-notifications__notification_time flex-row__flex-col flex-row__flex-col_40 flex-row__flex-col_sm-100">
+                        <div class="flight-notifications__notification flight-notifications__notification_time flex-row__flex-col flex-row__flex-col_20 flex-row__flex-col_sm-100">
                             <strong>Wait time</strong>
                             <p>1 hour</p>
                         </div>
@@ -528,7 +528,7 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                         </select>
-                        <button class="get-extra__add-to-cart-btn">Add To Cart</button>
+                        <button class="page__btn page__btn_add-to-cart">Add To Cart</button>
                     </div>
                 </div>
             </section>
@@ -558,7 +558,7 @@
                             <option value="3">3</option>
                             <option value="4">4</option>
                         </select>
-                        <button class="get-extra__add-to-cart-btn">Add To Cart</button>
+                        <button class="page__btn page__btn_add-to-cart">Add To Cart</button>
                     </div>
                 </div>
             </section>
@@ -583,7 +583,7 @@
         <div class="expandable__content">
             <div class="promo-code__input-wrapper">
                 <input type="text" class="promo-code__input" placeholder="Enter Promo Code">
-                <button class="promo-code__btn">Apply</button>
+                <button class="page__btn page__btn_promo">Apply</button>
             </div>
         </div>
     </section>
@@ -596,9 +596,7 @@
             <data class="page__price span span_align-right" value="1000.00">$1000</data>
         </header>
     </section>
-    <section>
-        <button class="page__continue-button page__continue-button_arrow">Continue</button>
-    </section>
+    <button class="page__btn page__btn_continue page__btn_arrow">Continue</button>
 </footer>
 </body>
 </html>
