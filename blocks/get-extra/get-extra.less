@@ -6,10 +6,6 @@
 
     &__thumbnail {
         display: none;
-
-        @media all and (min-width: 641px) {
-            display: block;
-        }
     }
 
     &__checklist {
@@ -50,5 +46,11 @@
         width: 73px;
         padding-left: 20px;
         margin-left: auto;
+    }
+
+    @media (min-width: 641px) {
+        &__thumbnail {
+            display: block;
+        }
     }
 }
