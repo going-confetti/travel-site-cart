@@ -11,10 +11,27 @@
 <body class="page">
 <header class="header">
     <button class="header__btn header__btn_menu"></button>
-    <a class="header__logo" href="#"><img src="../img/logo_small.png" alt="STA Travel" height="36" width="53"></a>
+    <a class="header__logo" href="#"></a>
+    <img src="../img/slogan.png" alt="Start The Adventure" height="49" width="313" class="header__slogan">
     <button class="header__btn header__btn_find"></button>
     <button class="header__btn header__btn_ask"></button>
 </header>
+<div class="booking-steps">
+    <ol class="booking-steps__list">
+        <li class="booking-steps__step booking-steps__step_active">
+            <span class="booking-steps__step-title">Your Cart</span>
+        </li>
+        <li class="booking-steps__step">
+            <span class="booking-steps__step-title">Travel Details</span>
+        </li>
+        <li class="booking-steps__step">
+            <span class="booking-steps__step-title">Payment</span>
+        </li>
+        <li class="booking-steps__step">
+            <span class="booking-steps__step-title">Your cart</span>
+        </li>
+    </ol>
+</div>
 <nav class="nav">
     <ul class="nav__links">
         <li>
@@ -40,14 +57,78 @@
         </li>
     </ul>
 </nav>
+<div class="page__container">
+<aside class="sidebar">
+    <header class="heading sidebar__heading">
+        <h3 class="page__heading page__heading_h3">Your Cart</h3>
+    </header>
+    <section class="section">
+        <header class="section-heading section-heading_orange section-heading_h5 section-heading_arrow-small-orange heading heading_white">
+            <h5 class="page__heading page__heading_h5 page__heading_white">Flights</h5>
+            <button class="section-heading__button">Remove</button>
+        </header>
+        <div class="section-content section-content_no-decoration">
+            <div class="flex-row flex-row_border-bottom">
+                <div class="flex-row__flex-col flex-row__flex-col_100">
+                    <span class="section-content__black-bold-uppercase">Room 1</span>
+                    <p class="section-content__grey">
+                        Superior Room, 1 king bed, Courtyard area
+                    </p>
+                </div>
+                <div class="flex-row__flex-col flex-row__flex-col_50">
+                    <span class="section-content__black-bold-uppercase">Room 1</span>
+                    <p class="section-content__grey">
+                        Superior Room, 1 king bed, Courtyard area
+                    </p>
+                </div>
+                <div class="flex-row__flex-col flex-row__flex-col_50">
+                    <span class="section-content__grey">Check in:</span>
+                    <p class="section-content__black-bold-uppercase">
+                        Thurs, March 17, 2015
+                    </p>
+                </div>
+            </div>
+            <div class="expandable expandable_section">
+                <a href="#" class="expandable__expander expandable__expander_large expandable__expander_toggle-text">Full Details</a>
+                <div class="flex-row expandable__content expandable__content_flex">
+                    <div class="flex-row__flex-col flex-row__flex-col_60 flex-row__flex-col_sm-100">
+                        <p class="section-content__grey">
+                            <strong>Address</strong>
+                        </p>
+                        <p class="section-content__grey">
+                            <span>Main Street, Main, Mainland UK</span>
+                        </p>
+                    </div>
+                    <div class="flex-row__flex-col flex-row__flex-col_30 flex-row__flex-col_sm-100 flex-row__flex-col_right">
+                        <p class="section-content__grey">
+                            <strong>Guests</strong>
+                            <span>3 adults</span>
+                        </p>
+                        <p class="section-content__grey">
+                            <strong>Meal Type</strong>
+                            <span>Breakfast included</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row flex-row_border-top">
+                <div class="flex-row__flex-col flex-row__flex-col_60 flex-row__flex-col_sm-100 flex-row__flex-col_right flex-row flex-row_right-center">
+                    <h5 class="page__heading page__heading_h5">Hotel Total</h5>
+                    <data class="page__price" value="1000.00">$1000</data>
+                </div>
+            </div>
+        </div>
+    </section>
+</aside>
 <section class="cart">
     <header class="cart-heading">
-        <div class="cart-title cart-title_border-bottom heading">
+        <div class="cart-heading__head heading">
             <h1 class="page__heading page__heading_h1">Your cart</h1>
-            <span class="cart-title__items-count">3 items</span>
-            <data class="page__price span span_align-right" value="1000.00">$1000</data>
+            <span class="cart-heading__items-count">3 items</span>
+            <data class="page__price page__price_mobile-only span span_align-right" value="1000.00">$1000</data>
+            <h4 class="cart-heading__subheading page__heading page__heading_h4 page__heading_grey">Please review your purchases</h4>
         </div>
-        <div class="cart-title cart-title_vertical-padding">
+        <div class="cart-heading__button-wrapper">
             <button class="page__btn page__btn_continue">Continue to checkout</button>
         </div>
     </header>
@@ -66,7 +147,7 @@
         </ul>
         <section class="section">
             <header class="section-heading section-heading_orange section-heading_icon section-heading_icon_flights section-heading_small heading heading_white">
-                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Outbound</h4>
+                <h4 class="page__heading page__heading_h4 page__heading_white">Outbound</h4>
                 <time class="section-heading__time">21h 57m</time>
             </header>
             <div class="section-content">
@@ -196,7 +277,7 @@
                 </section>
             </div>
             <header class="section-heading section-heading_orange section-heading_icon section-heading_icon_flights section-heading_small heading heading_white">
-                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Inbound</h4>
+                <h4 class="page__heading page__heading_h4 page__heading_white">Inbound</h4>
                 <time class="section-heading__time">22h 14m</time>
             </header>
             <div class="section-content">
@@ -332,7 +413,7 @@
     <section class="travel-extras">
         <section class="section">
             <header class="section-heading section-heading_purple section-heading_icon section-heading_icon_hotel heading heading_white">
-                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Hotel De Las Letras</h4>
+                <h4 class="page__heading page__heading_h4 page__heading_white">Hotel De Las Letras</h4>
             </header>
             <div class="section-content">
                 <h6 class="section-content__header page__heading page__heading_h6">1 night stay</h6>
@@ -389,7 +470,7 @@
         </section>
         <section class="section">
             <header class="section-heading section-heading_gold section-heading_icon section-heading_icon_globe heading heading_white">
-                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Gift Vouchers</h4>
+                <h4 class="page__heading page__heading_h4 page__heading_white">Gift Vouchers</h4>
             </header>
             <div class="section-content">
                 <div class="flex-row flex-row_col-border">
@@ -428,7 +509,7 @@
         </section>
         <section class="section">
             <header class="section-heading section-heading_navy section-heading_icon section-heading_icon_insurance heading heading_white">
-                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Insurance</h4>
+                <h4 class="page__heading page__heading_h4 page__heading_white">Insurance</h4>
             </header>
             <div class="section-content">
                 <div class="flex-row flex-row_col-border">
@@ -467,7 +548,7 @@
         </section>
         <section class="section">
             <header class="section-heading section-heading_gold section-heading_icon section-heading_icon_globe heading heading_white">
-                <h4 class="section-heading__h4 page__heading page__heading_h4 page__heading_white">Discount Cards</h4>
+                <h4 class="page__heading page__heading_h4 page__heading_white">Discount Cards</h4>
             </header>
             <div class="section-content">
                 <div class="flex-row flex-row_col-border">
@@ -565,7 +646,7 @@
         </section>
     </section>
 </section>
-<aside class="sidebar"></aside>
+</div>
 <footer class="footer">
     <section class="pay">
         <h6 class="page__heading page__heading_h6">Pay securely with:</h6>
@@ -587,7 +668,7 @@
             </div>
         </div>
     </section>
-    <section class="section section_margin-top section_background section_footer">
+    <section class="section section_margin-top section_lightgreen section_footer">
         <p>
             Price includes Taxes. Credit Cards subject to 2% fee, no fees on Debit Cards. Shipping charges may apply.
         </p>

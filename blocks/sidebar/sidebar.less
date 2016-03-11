@@ -1,3 +1,15 @@
 .sidebar {
     display: none;
+
+    @media all and (min-width: 641px) {
+        display: block;
+        float: right;
+        width: 240px;
+        padding: 10px;
+        background-color: #ececec;
+
+        &__heading {
+            margin-bottom: 10px;
+        }
+    }
 }

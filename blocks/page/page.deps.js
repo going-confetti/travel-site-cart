@@ -8,7 +8,6 @@ exports.mustDeps = [
     {block: 'sidebar'},
     {block: 'cart'},
     {block: 'cart-heading'},
-    {block: 'cart-title'},
     {block: 'section'},
     {block: 'section-heading'},
     {block: 'section-content'},
@@ -19,5 +18,6 @@ exports.mustDeps = [
     {block: 'travel-extras'},
     {block: 'expandable'},
     {block: 'nav'},
-    {block: 'get-extra'}
+    {block: 'get-extra'},
+    {block: 'booking-steps'}
 ];

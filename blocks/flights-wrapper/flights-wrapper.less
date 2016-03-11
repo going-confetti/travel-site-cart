@@ -1,6 +1,10 @@
 .flights-wrapper {
     padding: 0 10px;
 
+    @media all and (min-width: 641px) {
+        padding: 0;
+    }
+
     &__ads {
         margin: 18px 0 13px;
     }
@@ -49,6 +53,10 @@
 
         &:hover {
             color: #f00;
+        }
+
+        @media all and (min-width: 641px) {
+            display: none;
         }
     }
 }

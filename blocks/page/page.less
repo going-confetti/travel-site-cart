@@ -1,7 +1,4 @@
 .page {
-    max-width: 640px;
-    min-width: 320px;
-    margin: 0 auto;
     font-family: sans-serif;
 
     * {
@@ -11,7 +8,13 @@
     }
 
     @media all and (max-width: 640px) {
+        max-width: 640px;
+        min-width: 320px;
         padding-top: 42px;
+    }
+
+    @media all and (min-width: 641px) {
+        min-width: 960px;
     }
 }
 
@@ -29,6 +32,12 @@
             content: '+';
             position: absolute;
             left:0;
+        }
+    }
+
+    &_mobile-only {
+        @media all and (min-width: 641px) {
+            display: none;
         }
     }
 }
@@ -70,6 +79,10 @@
 
     &_blue {
         color: #0165bb;
+    }
+
+    &_grey {
+        color: #8b8b8b;
     }
 }
 
@@ -126,5 +139,23 @@
             content: '>';
             margin-left: 5px;
         }
+    }
+}
+
+@media all and (min-width: 641px) {
+    .page__container {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .page__heading_h1 {
+        font-size: 36px;
+    }
+}
+
+.page__container {
+    @media all and (min-width: 641px) {
+        width: 960px;
+        margin: 0 auto;
     }
 }
