@@ -21,5 +21,6 @@ exports.mustDeps = [
     {block: 'get-extra'},
     {block: 'booking-steps'},
     {block: 'add-extras'},
-    {block: 'help-section'}
+    {block: 'help-section'},
+    {block: 'contacts'}
 ];
