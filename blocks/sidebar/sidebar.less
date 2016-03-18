@@ -8,11 +8,67 @@
 
         &__heading {
             margin-bottom: 10px;
+
+            &_padding {
+                padding: 10px 17px;
+            }
+
+            &_border-bottom {
+                border-bottom: 1px solid #eee;
+            }
+
+            &_no-margin {
+                margin: 0;
+            }
         }
 
         &__container {
             padding: 10px;
             background-color: #ececec;
+        }
+
+        &__lightgrey-container {
+            background-color: #f5f5f5;
+        }
+
+        &__icon {
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                height: 14px;
+                width: 14px;
+                left: 10px;
+            }
+
+            &_flight {
+                &:before {
+                    background: url(../img/flights-icon-dark.png);
+                }
+            }
+
+            &_passenger {
+                &:before {
+                    background: url(../img/passenger-icon-dark.png);
+                }
+            }
+        }
+
+        &__reasons {
+            padding: 10px 20px;
+        }
+
+        &__reason {
+            margin-bottom: 24px;
+
+            p {
+                margin-top: 12px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

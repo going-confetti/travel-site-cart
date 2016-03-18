@@ -59,7 +59,7 @@
 </nav>
 <div class="page__container">
     <aside class="sidebar">
-        <div class="sidebar__container">
+        <section class="sidebar__container">
             <header class="heading sidebar__heading">
                 <h3 class="page__heading page__heading_h3">Your Cart</h3>
             </header>
@@ -70,25 +70,25 @@
                 </header>
                 <div class="section-content section-content_no-decoration">
                     <div class="flex-row flex-row_border-bottom">
-                        <div class="flex-row__flex-col flex-row__flex-col_100">
+                        <div class="flex-row__flex-col flex-row__flex-col_padding flex-row__flex-col_100 sidebar__icon sidebar__icon_flight">
                             <span class="section-content__grey">Return Flight:</span>
                             <p class="section-content__black-bold-uppercase">
                                 London Heathrow (LHR) to Nadi (NAN)
                             </p>
                         </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_50">
+                        <div class="flex-row__flex-col flex-row__flex-col_padding flex-row__flex-col_50">
                             <span class="section-content__grey">Departing:</span>
                             <p class="section-content__black-bold-uppercase">
                                 Thu, March 15, 2015
                             </p>
                         </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_50">
+                        <div class="flex-row__flex-col flex-row__flex-col_padding flex-row__flex-col_50">
                             <span class="section-content__grey">Return:</span>
                             <p class="section-content__black-bold-uppercase">
                                 Thu, March 22, 2015
                             </p>
                         </div>
-                        <div class="flex-row__flex-col flex-row__flex-col_100">
+                        <div class="flex-row__flex-col flex-row__flex-col_padding flex-row__flex-col_100 sidebar__icon sidebar__icon_passenger">
                             <span class="section-content__grey">Passengers:</span>
                             <p class="section-content__black-bold">
                                 1 Adult, 2 Students
@@ -132,8 +132,58 @@
                     </ul>
                 </div>
             </section>
-        </div>
-
+        </section>
+        <section class="promo-code promo-code_no-border expandable">
+            <h6 class="page__heading page__heading_h6"><a href="#" class="expandable__expander">Apply Promo Code</a></h6>
+            <div class="expandable__content">
+                <div class="promo-code__input-wrapper">
+                    <input type="text" class="promo-code__input" placeholder="Enter Promo Code">
+                    <button class="page__btn page__btn_promo">Apply</button>
+                </div>
+            </div>
+        </section>
+        <section class="section section_final-total">
+            <header class="heading">
+                <h6 class="page__heading page__heading_h6">Final total</h6>
+                <data class="page__price span span_align-right" value="1000.00">$1000</data>
+            </header>
+        </section>
+        <button class="page__btn page__btn_continue page__btn_arrow">Continue</button>
+        <section class="help-section">
+            <header class="heading">
+                <h4 class="page__heading page__heading_h4">Need Help?</h4>
+            </header>
+            <p class="help-section__text">
+                Give us a call and talk to a travel expert.
+            </p>
+            <button class="help-section__btn help-section__btn_call page__btn page__btn_border">
+                <i class="help-section__icon help-section__icon_call"></i>
+                Call Us On 0333 321 2324
+            </button>
+            <button class="help-section__btn help-section__btn_chat page__btn page__btn_border">
+                <i class="help-section__icon help-section__icon_chat"></i>
+                Live Chat
+            </button>
+        </section>
+        <section class="sidebar__lightgrey-container">
+            <header class="sidebar__heading sidebar__heading_padding sidebar__heading_border-bottom sidebar__heading_no-margin">
+                <h5 class="page__heading page__heading_h5">Why Book With STA Travel?</h5>
+            </header>
+            <ul class="sidebar__reasons">
+                <li class="sidebar__reason">
+                    <h6 class="page__heading page__heading_h6">Choice</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </li>
+                <li class="sidebar__reason">
+                    <h6 class="page__heading page__heading_h6">Advice</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </li>
+                <li class="sidebar__reason">
+                    <h6 class="page__heading page__heading_h6">Advice</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, ullam voluptate.</p>
+                </li>
+            </ul>
+        </section>
     </aside>
     <section class="cart">
         <header class="cart-heading">
@@ -683,7 +733,7 @@
             </div>
         </div>
     </section>
-    <section class="section section_margin-top section_lightgreen section_footer">
+    <section class="section section_margin-top section_final-total">
         <p>
             Price includes Taxes. Credit Cards subject to 2% fee, no fees on Debit Cards. Shipping charges may apply.
         </p>
