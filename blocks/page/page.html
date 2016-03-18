@@ -704,6 +704,7 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
+                            <p class="get-extra__label get-extra__label_optional">Each traveller will need a visa</p>
                             <button class="page__btn page__btn_add-to-cart">Add To Cart</button>
                         </div>
                     </div>
@@ -714,7 +715,7 @@
 </div>
 <footer class="footer">
     <section class="pay">
-        <h6 class="page__heading page__heading_h6">Pay securely with:</h6>
+        <h6 class="pay__heading page__heading page__heading_h6">Pay securely with:</h6>
         <ul class="pay__cards-list">
             <li><img src="../img/visa-icon.png" alt="visa" height="26"></li>
             <li><img src="../img/visa-e-icon.png" alt="visa electron" height="26"></li>
@@ -723,15 +724,15 @@
             <li><img src="../img/american-e-icon.png" alt="american express" height="26"></li>
             <li><img src="../img/delta-icon.png" alt="delta" height="26"></li>
         </ul>
-    </section>
-    <section class="promo-code expandable">
-        <h6 class="page__heading page__heading_h6"><a href="#" class="expandable__expander">Apply Promo Code</a></h6>
-        <div class="expandable__content">
-            <div class="promo-code__input-wrapper">
-                <input type="text" class="promo-code__input" placeholder="Enter Promo Code">
-                <button class="page__btn page__btn_promo">Apply</button>
+        <section class="promo-code promo-code_footer expandable">
+            <h6 class="page__heading page__heading_h6"><a href="#" class="expandable__expander">Apply Promo Code</a></h6>
+            <div class="expandable__content">
+                <div class="promo-code__input-wrapper">
+                    <input type="text" class="promo-code__input" placeholder="Enter Promo Code">
+                    <button class="page__btn page__btn_promo">Apply</button>
+                </div>
             </div>
-        </div>
+        </section>
     </section>
     <section class="section section_margin-top section_final-total">
         <p>
@@ -742,7 +743,7 @@
             <data class="page__price span span_align-right" value="1000.00">$1000</data>
         </header>
     </section>
-    <button class="page__btn page__btn_continue page__btn_arrow">Continue</button>
+    <button class="footer__continue-btn page__btn page__btn_continue page__btn_shrink page__btn_arrow">Continue</button>
 </footer>
 </body>
 </html>

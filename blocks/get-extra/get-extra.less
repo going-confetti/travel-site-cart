@@ -39,6 +39,11 @@
         display: block;
         color: #434343;
         font-size: 12px;
+        text-align: right;
+
+        &_optional {
+            display: none;
+        }
     }
 
     &__number-of-travellers {
@@ -51,6 +56,22 @@
     @media (min-width: 641px) {
         &__thumbnail {
             display: block;
+            margin-top: 25px;
+        }
+
+        &__price-tag {
+            margin-left: auto;
+        }
+
+        &__number-of-travellers {
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        &__label {
+            &_optional {
+                display: block;
+            }
         }
     }
 }
