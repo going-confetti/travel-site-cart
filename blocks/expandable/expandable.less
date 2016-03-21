@@ -20,7 +20,7 @@
     }
 
     &_expanded {
-        .expandable__expander {
+        >.expandable__expander {
             &_large {
                 margin: 19px 10px 14px;
             }
@@ -30,11 +30,11 @@
             }
         }
 
-        .expandable__content {
+        >.expandable__content {
             display: block;
         }
 
-        .expandable__content_flex {
+        >.expandable__content_flex {
             display: flex;
         }
     }
@@ -74,7 +74,7 @@
         &_extra-item {
             .expandable__expander {
                 display: block;
-                pointer-events: none;
+                cursor: text;
 
                 &:before {
                     display: none;

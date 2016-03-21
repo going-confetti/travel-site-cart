@@ -1,8 +1,18 @@
 .get-extra {
     margin-top: 10px;
     background: #f6f7f9;
-    display: flex;
     padding: 10px;
+
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+
+        &_col {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
 
     &__thumbnail {
         display: none;
@@ -58,15 +68,13 @@
         padding: 10px 0;
         display: flex;
         flex-wrap: wrap;
+        flex-basis: 100%;
     }
 
     &__description {
         font-size: 13.5px;
         line-height: 1.2;
-
-        &_main {
-            margin-top: 12px;
-        }
+        margin: 12px 0 20px;
     }
 
     @media (min-width: 641px) {
@@ -108,6 +116,14 @@
             &:first-of-type {
                 margin-top: 25px;
             }
+        }
+
+        &__heading {
+            margin-left: 136px;
+        }
+
+        &__add-to-cart {
+            margin-top: -20px;
         }
     }
 }

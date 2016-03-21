@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('.expandable').on('click', '.expandable__expander', function(event) {
         event.preventDefault();
+        event.stopPropagation();
 
         if (window.matchMedia('(max-width: 640px)').matches) {
             $(this).closest('.expandable').toggleClass('expandable_expanded');

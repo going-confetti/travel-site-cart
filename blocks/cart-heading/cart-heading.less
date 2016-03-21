@@ -38,11 +38,15 @@
         }
 
         &__items-count {
-            margin-left: 10px;
             color: #434343;
             font-size: 36px;
             font-weight: bold;
             text-transform: uppercase;
+
+            &:before {
+                content: '–';
+                margin-right: 10px;
+            }
         }
 
         &__subheading {
