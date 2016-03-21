@@ -472,7 +472,11 @@
                         </div>
                     </section>
                     <div class="flex-row flex-row_border-top">
-                        <div class="flex-row__flex-col flex-row__flex-col_60 flex-row__flex-col_sm-100 flex-row__flex-col_right flex-row flex-row_right-center">
+                        <ul class="links-list flex-row__flex-col flex-row__flex-col_40">
+                            <li class="links-list__li"><a class="links-list__link" href="#">Fare terms & conditions</a></li>
+                            <li class="links-list__li"><a class="links-list__link links-list__link_blue" href="#">Fare breakdown</a></li>
+                        </ul>
+                        <div class="flex-row__flex-col flex-row__flex-col_60 flex-row__flex-col_sm-100 flex-row flex-row_right-center">
                             <h5 class="page__heading page__heading_h5">Flight Total</h5>
                             <data class="page__price" value="1000.00">$1000</data>
                         </div>
@@ -531,6 +535,9 @@
                         </div>
                     </div>
                     <div class="flex-row flex-row_border-top">
+                        <ul class="links-list flex-row__flex-col flex-row__flex-col_40">
+                            <li class="links-list__li"><a class="links-list__link links-list__link_blue" href="#">Cancellation rules</a></li>
+                        </ul>
                         <div class="flex-row__flex-col flex-row__flex-col_60 flex-row__flex-col_sm-100 flex-row__flex-col_right flex-row flex-row_right-center">
                             <h5 class="page__heading page__heading_h5">Hotel Total</h5>
                             <data class="page__price" value="1000.00">$1000</data>
@@ -665,6 +672,10 @@
                                 <li class="get-extra__checklist-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                                 <li class="get-extra__checklist-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                             </ul>
+                            <ul class="links-list links-list_inline">
+                                <li class="links-list__li"><a class="links-list__link" href="#">More details</a></li>
+                                <li class="links-list__li"><a class="links-list__link links-list__link_blue" href="#">Why do I need this?</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="expandable__content flex-row__flex-col_20 flex-row__flex-col_sm-100">
@@ -679,6 +690,7 @@
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                             </select>
+                            <p class="get-extra__label get-extra__label_optional">Each traveller will need a multiflex</p>
                             <button class="page__btn page__btn_add-to-cart">Add To Cart</button>
                         </div>
                     </div>
@@ -695,6 +707,10 @@
                                 <li class="get-extra__checklist-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                                 <li class="get-extra__checklist-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
                             </ul>
+                            <ul class="links-list links-list_inline">
+                                <li class="links-list__li"><a class="links-list__link" href="#">More details</a></li>
+                                <li class="links-list__li"><a class="links-list__link links-list__link_blue" href="#">Why do I need this?</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="expandable__content flex-row__flex-col_20 flex-row__flex-col_sm-100">
@@ -704,6 +720,40 @@
                                 <span class="get-extra__label">Price per traveller</span>
                             </div>
                             <select id="discount-number" class="get-extra__number-of-travellers">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                            <button class="page__btn page__btn_add-to-cart">Add To Cart</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="get-extra expandable expandable_extra-item flex-row">
+                    <div class="get-extra__thumbnail flex-row__flex-col_20">
+                        <img src="../img/thumb-placeholder.png" alt="extra" width="123" height="90">
+                    </div>
+                    <div class="flex-row__flex-col_60 flex-row__flex-col_sm-100">
+                        <h4 class="page__heading page__heading_h4"><a href="#" class="expandable__expander">Visa</a></h4>
+                        <div class="expandable__content">
+                            <ul class="get-extra__checklist">
+                                <li class="get-extra__checklist-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="get-extra__checklist-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li class="get-extra__checklist-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            </ul>
+                            <ul class="links-list links-list_inline">
+                                <li class="links-list__li"><a class="links-list__link" href="#">More details</a></li>
+                                <li class="links-list__li"><a class="links-list__link links-list__link_blue" href="#">Why do I need this?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="expandable__content flex-row__flex-col_20 flex-row__flex-col_sm-100">
+                        <div class="get-extra__add-to-cart">
+                            <div class="get-extra__price-tag">
+                                <data class="page__price page__price_plus" value="100.00">$100.00</data>
+                                <span class="get-extra__label">Price per traveller</span>
+                            </div>
+                            <select id="visa-number" class="get-extra__number-of-travellers">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
