@@ -53,6 +53,22 @@
         margin-left: auto;
     }
 
+    &__row {
+        border-top: 1px solid #d3d3d3;
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__description {
+        font-size: 13.5px;
+        line-height: 1.2;
+
+        &_main {
+            margin-top: 12px;
+        }
+    }
+
     @media (min-width: 641px) {
         &__thumbnail {
             display: block;
@@ -61,6 +77,7 @@
 
         &__price-tag {
             margin-left: auto;
+            text-align: right;
         }
 
         &__number-of-travellers {
@@ -71,6 +88,25 @@
         &__label {
             &_optional {
                 display: block;
+            }
+        }
+
+        &__description {
+            padding-right: 50px;
+
+            &_extra-padding {
+                padding-right: 100px;
+            }
+
+            &_main {
+                border-top: 1px solid #d3d3d3;
+                padding-top: 22px;
+            }
+        }
+
+        &__row {
+            &:first-of-type {
+                margin-top: 25px;
             }
         }
     }

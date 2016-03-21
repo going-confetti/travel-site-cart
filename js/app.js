@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.expandable').on('click', '.expandable__expander', function(event) {
         event.preventDefault();
 
-        if ($(window).width() < 640) {
+        if (window.matchMedia('(max-width: 640px)').matches) {
             $(this).closest('.expandable').toggleClass('expandable_expanded');
 
             if ($(this).hasClass('expandable__expander_toggle-text')) {
@@ -15,7 +15,7 @@ $(document).ready(function() {
     });
 
     $('.header').on('click', '.header__btn_menu', function() {
-        if ($(window).width() < 640) {
+        if (window.matchMedia('(max-width: 640px)').matches) {
             $('.nav').toggleClass('nav_opened');
         }
     })
