@@ -59,25 +59,27 @@
     }
 
     @media (min-width: 641px) {
-        &__expander {
-            display: none;
-        }
-
-        &__content {
-            display: block;
-
-            &_flex {
-                display: flex;
-            }
-        }
-
-        &_extra-item {
+        &_mobile {
             .expandable__expander {
-                display: block;
-                cursor: text;
+                display: none;
+            }
 
-                &:before {
-                    display: none;
+            .expandable__content {
+                display: block;
+
+                &_flex {
+                    display: flex;
+                }
+            }
+
+            &.expandable_extra-item {
+                .expandable__expander {
+                    display: block;
+                    cursor: text;
+
+                    &:before {
+                        display: none;
+                    }
                 }
             }
         }
