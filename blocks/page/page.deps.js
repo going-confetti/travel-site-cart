@@ -16,7 +16,6 @@ exports.mustDeps = [
     {block: 'flight'},
     {block: 'flight-notifications'},
     {block: 'travel-extras'},
-    {block: 'nav'},
     {block: 'get-extra'},
     {block: 'booking-steps'},
     {block: 'add-extras'},
