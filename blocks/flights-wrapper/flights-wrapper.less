@@ -8,8 +8,12 @@
     &__ad-item {
         height: 40px;
         margin-bottom: 11px;
-        padding: 0 10px;
+        padding-left: 88px;
+        padding-right: 10px;
         display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
 
         &:last-child {
             margin-bottom: 0;
@@ -17,10 +21,11 @@
 
         &:before {
             content: '';
-            display: block;
-            width: 54px;
+            position: absolute;
+            left: 10px;
+            top: 0;
+            width: 52px;
             height: 40px;
-            margin-right: 20px;
         }
 
         &_grey {
@@ -40,6 +45,10 @@
         }
     }
 
+    &__ad-description {
+        display: none;
+    }
+
     &__change-flight {
         font-size: 13px;
         font-weight: bold;
@@ -57,6 +66,35 @@
 
         &__change-flight {
             display: none;
+        }
+
+        &__ad-item {
+            height: auto;
+            padding: 14px 18px 14px 120px;
+
+            &:before {
+                height: 64px;
+                left: 18px;
+                width: 80px;
+            }
+
+            &_grey {
+                &:before {
+                    background: url(../img/info-large.png) no-repeat center center;
+                }
+            }
+
+            &_blue {
+                &:before {
+                    background: url(../img/blue-ticket-large.png) no-repeat left center;
+                }
+            }
+        }
+
+        &__ad-description {
+            display: block;
+            font-size: 14px;
+            margin-top: 8px;
         }
     }
 }
