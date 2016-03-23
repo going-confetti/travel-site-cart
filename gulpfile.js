@@ -42,4 +42,11 @@ gulp.task('html', function () {
        .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['css', 'html']);
+gulp.task('js', function () {
+   return deps([{block: 'page'}])
+       .pipe(bem.src('{block}.js'))
+       .pipe(concat('app.js'))
+       .pipe(gulp.dest('dist'));
+});
+
+gulp.task('default', ['css', 'html', 'js']);
