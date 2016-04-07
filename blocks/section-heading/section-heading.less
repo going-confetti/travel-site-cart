@@ -10,6 +10,10 @@
         display: block;
         margin-left: auto;
 
+        >span {
+            display: none;
+        }
+
         &:before {
             display: inline-block;
             content: '';
@@ -89,19 +93,28 @@
         background-color: #2096d6;
     }
 
+    .arrow {
+        top: 100%;
+        left: 10px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-width: 10px 10px 0 10px;
+    }
+
+    .arrow_small {
+        .arrow;
+        border-width: 6px 6px 0 6px;
+    }
+
     &_arrow-blue {
         position: relative;
         margin-bottom: 20px;
 
         &:after {
-            top: 100%;
-            left: 10px;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            border-width: 10px 10px 0 10px;
+            .arrow;
             border-top-color: #2096d6;
         }
     }
@@ -111,14 +124,7 @@
         margin-bottom: 5px;
 
         &:after {
-            top: 100%;
-            left: 10px;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            border-width: 5px 5px 0 5px;
+            .arrow_small;
             border-top-color: #f57d2f;
         }
     }
@@ -128,14 +134,7 @@
         margin-bottom: 5px;
 
         &:after {
-            top: 100%;
-            left: 10px;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            border-width: 5px 5px 0 5px;
+            .arrow_small;
             border-top-color: #2096d6;
         }
     }
@@ -149,7 +148,38 @@
         }
     }
 
-    &_h5 {
-        height: 30px;
+    @media (min-width: 641px) {
+        height: 45px;
+        padding: 0 18px;
+
+        &_small {
+            height: 40px;
+
+            &.section-heading_icon {
+                &:before {
+                    width: 30px;
+                    height: 40px;
+                }
+            }
+        }
+
+        &_icon {
+            &:before {
+                width: 40px;
+                height: 45px;
+            }
+        }
+
+        &_h5 {
+            height: 30px;
+            padding: 0 10px;
+        }
+
+        &__time {
+            >span {
+                display: inline;
+                font-weight: bold;
+            }
+        }
     }
 }
