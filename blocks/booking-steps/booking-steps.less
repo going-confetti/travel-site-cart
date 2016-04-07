@@ -23,7 +23,9 @@
             height: 35px;
             color: #8b8d8d;
             flex-grow: 1;
-            padding-left: 51px;
+            padding-left: 39px;
+            display: flex;
+            align-items: center;
 
             &:before,
             &:after {
@@ -62,7 +64,7 @@
             }
 
             &:first-child {
-                padding-left: 40px;
+                padding-left: 12px;
             }
 
             &:last-child {
@@ -74,15 +76,15 @@
         }
 
         &__step-title {
-            line-height: 35px;
-            vertical-align: middle;
             font-weight: bold;
             text-transform: uppercase;
+            position: relative;
+            padding-left: 30px;
+            line-height: 22px;
 
             &:before {
                 counter-increment: step;
                 content: counter(step);
-                display: inline-block;
                 border: 2px solid #fff;
                 height: 18px;
                 width: 18px;
@@ -90,7 +92,9 @@
                 line-height: 18px;
                 text-align: center;
                 font-size: 12px;
-                margin-right: 8px;
+                vertical-align: middle;
+                position: absolute;
+                left: 0;
             }
         }
     }
