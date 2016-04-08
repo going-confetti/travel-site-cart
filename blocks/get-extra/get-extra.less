@@ -1,6 +1,8 @@
+@import "../../common/variables";
+
 .get-extra {
     margin-top: 10px;
-    background: #f6f7f9;
+    background: @colorLightGrey2;
     padding: 10px;
 
     &__flex {
@@ -31,7 +33,7 @@
         &:before {
             content: '✓';
             font-weight: bold;
-            color: #c3d833;
+            color: @colorGreen;
             position: absolute;
             left: 0;
             top: 50%;
@@ -47,7 +49,6 @@
 
     &__label {
         display: block;
-        color: #434343;
         font-size: 12px;
         text-align: right;
 
@@ -64,7 +65,7 @@
     }
 
     &__row {
-        border-top: 1px solid #d3d3d3;
+        border-top: 1px solid @colorLightGrey6;
         padding: 10px 0;
         display: flex;
         flex-wrap: wrap;
@@ -111,7 +112,7 @@
             }
 
             &_main {
-                border-top: 1px solid #d3d3d3;
+                border-top: 1px solid @colorLightGrey6;
                 padding-top: 22px;
             }
         }

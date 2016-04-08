@@ -1,9 +1,10 @@
+@import "../../common/variables";
+
 .expandable {
     &__expander {
         display: inline-block;
         cursor: pointer;
         text-decoration: none;
-        color: #434343;
 
         &_large {
             margin: 19px 10px;
@@ -42,8 +43,8 @@
     &_extra-item {
         .expandable__expander {
             &:before {
-                background-color: #f9f9fb;
-                color: #007bc8;
+                background-color: @colorLightGrey2;
+                color: @colorBlue;
                 display: inline-block;
                 border-radius: 23px;
                 width: 23px;
@@ -51,9 +52,9 @@
                 line-height: 23px;
                 font-weight: bold;
                 text-align: center;
-                border: 1px solid #e4e4e4;
+                border: 1px solid @colorLightGrey9;
                 margin-right: 14px;
-                box-shadow: 0 1px 3px 0 #e3e3e3;
+                box-shadow: 0 1px 3px 0 @colorLightGrey10;
             }
         }
     }

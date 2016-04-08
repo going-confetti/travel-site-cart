@@ -1,7 +1,9 @@
+@import "../../common/variables";
+
 .promo-code {
     margin-top: 25px;
-    border-top: 1px solid #d3d3d3;
-    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid @promoSectionBorder;
+    border-bottom: 1px solid @promoSectionBorder;
     padding: 14px 0;
 
     &_no-border {
@@ -16,14 +18,13 @@
 
     &__input {
         flex-grow: 1;
-        border: 1px solid #dfe3e6;
+        border: 1px solid @promoInputBorder;
         padding-left: 17px;
         height: 37px;
         min-width: 170px;
     }
 
     &__btn {
-        color: #434343;
         text-decoration: none;
         outline: none;
         border: none;

@@ -1,3 +1,5 @@
+@import "../../common/variables";
+
 .help-section {
     padding: 20px 0;
     border-top: 1px solid #eee;
@@ -6,34 +8,33 @@
 
     &__text {
         margin: 10px 0 15px;
-        color: #434343;
         font-size: 13px;
     }
 
     &__btn {
         width: 100%;
         height: 35px;
-        background: #fff;
+        background: @colorWhite;
         border: 1px solid;
         margin-top: 9px;
         text-align: left;
         padding: 0;
 
         &_call {
-            border-color: #f5d5c0;
+            border-color: @helpSectionCallBtnBorder;
 
             &:hover {
-                color: #fff;
-                background: #f47c30;
+                color: @colorWhite;
+                background: @helpSectionCallBtnBackground;
             }
         }
 
         &_chat {
-            border-color: #c4e2ea;
+            border-color: @helpSectionChatBtnBorder;
 
             &:hover {
-                color: #fff;
-                background: #00afdc;
+                color: @colorWhite;
+                background: @helpSectionChatBtnBackground;
             }
         }
     }
@@ -58,18 +59,18 @@
         }
 
         &_call {
-            background: url(../img/call-icon.png) no-repeat center center #f57d2f;
+            background: url(../img/call-icon.png) no-repeat center center @helpSectionCallBtnBackground;
 
             &:after {
-                border-left-color: #f57d2f;
+                border-left-color: @helpSectionCallBtnBackground;
             }
         }
 
         &_chat {
-            background: url(../img/chat-icon-lightblue.png) no-repeat center center #01addb;
+            background: url(../img/chat-icon-lightblue.png) no-repeat center center @helpSectionChatBtnBackground;
 
             &:after {
-                border-left-color: #01addb;
+                border-left-color: @helpSectionChatBtnBackground;
             }
         }
     }

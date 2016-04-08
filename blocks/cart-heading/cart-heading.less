@@ -1,17 +1,19 @@
+@import "../../common/variables";
+
 .cart-heading {
-    background: #eeeff1;
-    box-shadow: 0 1px 4px 0 rgba(188,189,191,1);
+    background: @colorLightGrey3;
+    box-shadow: 0 1px 4px 0 @colorLightGrey7;
 
     margin-bottom: 20px;
 
     &__button-wrapper {
-        border-top: 1px solid #dedfe1;
+        border-top: 1px solid @colorLightGrey6;
         padding: 10px;
     }
 
     &__items-count {
         margin-left: 10px;
-        color: #838486;
+        color: @colorLightGrey1;
     }
 
     &__head {
@@ -39,7 +41,7 @@
         }
 
         &__items-count {
-            color: #434343;
+            color: @textColor;
             font-size: 36px;
             font-weight: bold;
             text-transform: uppercase;

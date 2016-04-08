@@ -1,3 +1,5 @@
+@import "../../common/variables";
+
 .flex-row {
     display: flex;
     flex-wrap: wrap;
@@ -13,11 +15,11 @@
     }
 
     &_border-top {
-        border-top: 1px solid #d9d9d9;
+        border-top: 1px solid @gridBorderColor;
     }
 
     &_border-bottom {
-        border-bottom: 1px solid #d9d9d9;
+        border-bottom: 1px solid @gridBorderColor;
     }
 
     &__flex-col {
@@ -47,11 +49,11 @@
             }
 
             &_sm-border-right {
-                border-right: 1px solid #d9d9d9;
+                border-right: 1px solid @gridBorderColor;
             }
 
             &_sm-border-bottom {
-                border-bottom: 1px solid #d9d9d9;
+                border-bottom: 1px solid @gridBorderColor;
             }
         }
     }
@@ -90,7 +92,7 @@
 
         &_col-border {
             .flex-row__flex-col {
-                border-right: 1px solid #d9d9d9;
+                border-right: 1px solid @gridBorderColor;
 
                 &:last-child {
                     border-right: none;

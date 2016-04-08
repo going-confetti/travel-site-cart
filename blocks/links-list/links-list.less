@@ -1,3 +1,5 @@
+@import "../../common/variables";
+
 .links-list {
     display: none;
 
@@ -15,7 +17,7 @@
 
             .links-list__li {
                 padding: 0 15px;
-                border-right: 2px solid #434343;
+                border-right: 2px solid @textColor;
 
                 &:first-child {
                     padding-left: 0;
@@ -29,7 +31,7 @@
         }
 
         &__link {
-            color: #434343;
+            color: @textColor;
             text-decoration: none;
             font-weight: bold;
 
@@ -38,7 +40,7 @@
             }
 
             &_blue {
-                color: #0165bd;
+                color: @textColorBranded;
             }
         }
     }

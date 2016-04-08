@@ -1,10 +1,12 @@
+@import "../../common/variables";
+
 .section-heading {
     height: 50px;
     position: relative;
     padding: 0 10px;
 
     &__time {
-        color: #fff;
+        color: @textColorWhite;
         font-size: 13px;
         font-family: sans-serif;
         display: block;
@@ -31,7 +33,7 @@
         outline: none;
         background: none;
         cursor: pointer;
-        color: #fff;
+        color: @textColorWhite;
         text-decoration: underline;
 
         &:hover {
@@ -74,23 +76,23 @@
     }
 
     &_orange {
-        background-color: #f57d2f;
+        background-color: @colorOrange;
     }
 
     &_purple {
-        background-color: #4d156c;
+        background-color: @colorPurple;
     }
 
     &_gold {
-        background-color: #a99a25;
+        background-color: @colorGold;
     }
 
     &_navy {
-        background-color: #0c2454;
+        background-color: @colorDarkBlue;
     }
 
     &_blue {
-        background-color: #2096d6;
+        background-color: @colorLightBlue;
     }
 
     .arrow {
@@ -115,7 +117,7 @@
 
         &:after {
             .arrow;
-            border-top-color: #2096d6;
+            border-top-color: @colorLightBlue;
         }
     }
 
@@ -125,7 +127,7 @@
 
         &:after {
             .arrow_small;
-            border-top-color: #f57d2f;
+            border-top-color: @colorOrange;
         }
     }
 
@@ -135,7 +137,7 @@
 
         &:after {
             .arrow_small;
-            border-top-color: #2096d6;
+            border-top-color: @colorLightBlue;
         }
     }
 

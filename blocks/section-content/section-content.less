@@ -1,13 +1,15 @@
+@import "../../common/variables";
+
 .section-content {
-    border: 1px solid #d9d9d9;
+    border: 1px solid @sectionContentBorder;
     border-top: none;
     font-size: 13px;
-    box-shadow: 0 0 4px 1px rgba(214,214,214,1);
+    box-shadow: 0 0 4px 1px @sectionContentShadow;
 
     &__header {
         height: 47px;
         line-height: 47px;
-        border-bottom: 3px solid #d9d9d9;
+        border-bottom: 3px solid @sectionContentBorder;
         padding: 0 9px;
     }
 
@@ -20,13 +22,13 @@
     }
 
     &__black-bold {
-        color: #000;
+        color: @textColorDark;
         font-weight: bold;
         margin: 8px 0;
     }
 
     &__grey {
-        color: #8b8b8b;
+        color: @textColorLight;
     }
 
     &_no-decoration{

@@ -1,3 +1,5 @@
+@import "../../common/variables";
+
 .flights-wrapper {
     padding: 0 10px;
 
@@ -29,7 +31,7 @@
         }
 
         &_grey {
-            background-color: #f0f0f0;
+            background-color: @colorLightGrey12;
 
             &:before {
                 background: url(../img/info.png) no-repeat center center;
@@ -37,7 +39,7 @@
         }
 
         &_blue {
-            background-color: #f4f9ff;
+            background-color: @colorLightBlue2;
 
             &:before {
                 background: url(../img/blue-ticket.png) no-repeat left center;
@@ -53,11 +55,11 @@
         font-size: 13px;
         font-weight: bold;
         text-decoration: none;
-        color: #424242;
+        color: @colorGrey4;
         margin-left: auto;
 
         &:hover {
-            color: #f00;
+            color: @colorRed;
         }
     }
 
