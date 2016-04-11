@@ -2,7 +2,7 @@ var FULL_DETAILS = 'Full Details';
 var LESS_DETAILS = 'Less Details';
 
 $(document).ready(function() {
-    $('.expandable').on('click', '>.expandable__expander', function(event) {
+    $('.expandable').on('click', '.expandable__expander', function(event) {
         event.preventDefault();
 
         $(this).closest('.expandable').toggleClass('expandable_expanded');

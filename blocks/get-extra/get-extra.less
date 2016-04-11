@@ -4,17 +4,7 @@
     margin-top: 10px;
     background: @colorLightGrey2;
     padding: 10px;
-
-    &__flex {
-        display: flex;
-        flex-wrap: wrap;
-
-        &_col {
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
-    }
+    display: flex;
 
     &__thumbnail {
         display: none;
@@ -49,7 +39,7 @@
 
     &__label {
         display: block;
-        font-size: 12px;
+        font-size: 11px;
         text-align: right;
 
         &_optional {
@@ -83,9 +73,32 @@
     }
 
     @media (min-width: 641px) {
+        min-height: 210px;
+        padding: 20px 0;
+
+        &_no-bottom-padding {
+            padding-bottom: 0;
+        }
+
+        .padded-border-top {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0 20px;
+                border-top: 1px solid @colorLightGrey6;
+            }
+        }
+
         &__thumbnail {
             display: block;
             margin-top: 8px;
+            flex-basis: 123px;
+            padding-left: 17px;
         }
 
         &__price-tag {
@@ -96,6 +109,7 @@
         &__number-of-travellers {
             margin-top: 15px;
             margin-bottom: 10px;
+            height: 24px;
         }
 
         &__label {
@@ -112,27 +126,43 @@
             }
 
             &_main {
-                border-top: 1px solid @colorLightGrey6;
                 padding-top: 22px;
+                .padded-border-top;
             }
         }
 
         &__row {
+            padding: 15px 0;
+            border: none;
+            .padded-border-top;
+
             &:first-of-type {
                 margin-top: 25px;
             }
         }
 
         &__heading {
-            margin-left: 136px;
+            padding-left: 20px;
+            margin-left: 25%;
+            flex-basis: 75%;
+        }
+
+        &__list-container {
+            padding: 0 20px;
         }
 
         &__add-to-cart {
-            margin-top: -20px;
+            padding-right: 20px;
+            justify-content: flex-end;
         }
 
         &__checklist-item {
             margin-top: 16px;
+        }
+
+        &__grid-cell {
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
 }

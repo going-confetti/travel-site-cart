@@ -3,34 +3,59 @@
 .flight-notifications {
     background-color: @flightNotificationBackground;
     margin: 0 10px;
+    padding: 0 10px;
 
     &__notification {
         color: @colorGrey4;
         position: relative;
+        min-height: 50px;
+        padding: 16px 0;
+
+        .icon {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 17px;
+            width: 18px;
+        }
 
         &_time {
-            padding-left: 40px;
+            padding-left: 30px;
 
             &:before {
-                content: '';
-                position: absolute;
-                left: 10px;
-                height: 17px;
-                width: 18px;
+                .icon;
                 background-image: url(../img/clock-icon-dark.png);
             }
         }
 
         &_warning {
-            padding-left: 40px;
+            padding-left: 30px;
 
             &:before {
-                content: '';
-                position: absolute;
-                left: 10px;
-                height: 17px;
-                width: 18px;
+                .icon;
                 background-image: url(../img/warning-icon.png);
+            }
+        }
+    }
+
+    &__notification-title {
+        line-height: 18px;
+    }
+
+    @media (min-width: 641px) {
+        margin: 20px 20px 0;
+        padding: 0;
+        align-items: center;
+
+        &__notification {
+            min-height: 60px;
+
+            &:first-child:not(:last-child) {
+                padding-left: 60px;
+
+                &:before {
+                    left: 30px;
+                }
             }
         }
     }

@@ -108,7 +108,7 @@
             margin-left: 12px;
             background: @promoButtonColor;
             border: none;
-            box-shadow: 0 1px 3px 0 @promoButtonShadowColor;
+            box-shadow: 1px 1px 3px -1px @promoButtonShadowColor;
 
             &:hover {
                 color: @textColor + #222;
@@ -177,6 +177,11 @@
         &__btn {
             &_shrink {
                 width: 174px;
+            }
+
+            &_add-to-cart {
+                height: 34px;
+                margin-top: 10px;
             }
         }
     }

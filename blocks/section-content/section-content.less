@@ -13,6 +13,15 @@
         padding: 0 9px;
     }
 
+    &__grid-cell {
+        padding: 10px;
+    }
+
+    &__summary {
+        height: 50px;
+        padding: 0 10px;
+    }
+
     //@todo: implement a text elemnt of the page block and all font-style-specific declarations to its modifiers
     &__black-bold-uppercase {
         color: #000;
@@ -34,5 +43,39 @@
     &_no-decoration{
         box-shadow: none;
         border: none;
+    }
+
+    @media (min-width: 641px) {
+        &__grid-cell {
+            padding: 20px;
+
+            &_details {
+                padding: 17px 20px 10px;
+            }
+
+            &_summary {
+                height: 50px;
+            }
+
+            &_sidebar {
+                padding: 10px;
+            }
+        }
+
+        &__notification-container {
+            border-top: 1px solid @gridBorderColor;
+        }
+
+        &__summary {
+            height: 50px;
+            padding: 0 20px;
+
+            &_sidebar {
+                height: 37px;
+                padding: 0 10px 0 35px;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
     }
 }

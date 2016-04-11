@@ -5,6 +5,7 @@
         display: inline-block;
         cursor: pointer;
         text-decoration: none;
+        color: @textColor;
 
         &_large {
             margin: 19px 10px;
@@ -21,7 +22,7 @@
     }
 
     &_expanded {
-        >.expandable__expander {
+        .expandable__expander {
             &_large {
                 margin: 19px 10px 14px;
             }
@@ -31,11 +32,11 @@
             }
         }
 
-        >.expandable__content {
+        .expandable__content {
             display: block;
         }
 
-        >.expandable__content_flex {
+        .expandable__content_flex {
             display: flex;
         }
     }
