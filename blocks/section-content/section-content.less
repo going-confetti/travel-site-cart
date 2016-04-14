@@ -6,6 +6,11 @@
     font-size: 13px;
     box-shadow: 0 0 4px 1px @sectionContentShadow;
 
+    &_no-decoration{
+        box-shadow: none;
+        border: none;
+    }
+
     &__header {
         height: 47px;
         line-height: 47px;
@@ -14,7 +19,7 @@
     }
 
     &__grid-cell {
-        padding: 10px;
+        padding: 20px 10px;
     }
 
     &__summary {
@@ -22,27 +27,28 @@
         padding: 0 10px;
     }
 
-    //@todo: implement a text elemnt of the page block and all font-style-specific declarations to its modifiers
-    &__black-bold-uppercase {
-        color: #000;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin: 8px 0;
-    }
+    &__text {
+        &_black-bold {
+            color: @textColorDark;
+            font-weight: bold;
+        }
 
-    &__black-bold {
-        color: @textColorDark;
-        font-weight: bold;
-        margin: 8px 0;
-    }
+        &_uppercase {
+            text-transform: uppercase;
+        }
 
-    &__grey {
-        color: @textColorLight;
-    }
+        &_line-height {
+            line-height: 1.4;
+        }
 
-    &_no-decoration{
-        box-shadow: none;
-        border: none;
+        &_grey {
+            color: @textColorLight;
+        }
+
+        &_margin-bottom {
+            display: block;
+            margin-bottom: 5px;
+        }
     }
 
     @media (min-width: 641px) {
